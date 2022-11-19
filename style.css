@@ -1,0 +1,321 @@
+/*RESET CSS
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+    */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    user-select: none; /*IMPEDIR LA SELECCIÓN DE TEXTO PARA EL USR*/
+    background-color: rgba(154, 155, 155, 0.308);
+}
+
+a{
+    text-decoration: none;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*EDICIÓN DE TODOS LOS SPAN*/
+span{
+    border-bottom:2px solid white;
+    padding: 10px;
+}
+/*EDICIÓN DE TODAS LAS CLASES TITLE DE SPAN*/
+span.title{
+    color: lightgreen;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*EDICIÓN DEL HEADER FLEX*/
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(IMAGES/nav.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70px;
+    z-index: 30; /*LO ENVÍO A LA CAPA SUP PARA QUE NO ME CHOQUE CON LA LIBRERÍA DE IMG*/
+}
+/*EDICIÓN DEL LOGO AXEL*/
+header .logo{
+    color: white;
+}
+/*EDICIÓN DE LAS LISTAS*/
+header nav ul li{
+    list-style: none;
+    display: inline;
+}
+/*EDICIÓN DE LOS LINKS DE LAS LISTAS*/
+header nav a {
+    color: rgb(171, 226, 210);
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+/*EDICIÓN DEL HOVER DE LAS LISTAS*/
+header nav a:hover{
+    text-decoration: underline;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*EDICIÓN LOGO DEL VH*/
+.logo-m{
+    font-family: cursive;
+}
+/*EDICIÓN TÍTULO DEL VH*/
+.h1{
+    margin-bottom: 50px;
+    font-size: 100px;
+    color: white;
+}
+/*EDICIÓN IMAGEN // RESPECTO AL VH DEL HEADER*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(IMAGES/IMG-HEADER.jpg); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*ARTICULOS DE MI BODY*/
+.cont-art {
+    background-image: url(IMAGES/back-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    margin: 0 auto;
+}  
+
+article{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*////////////////////// OVER IMG */
+
+
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*BOTONES*/
+article button{
+    width: 150px;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    background-color: lightgreen;
+    margin-top: 20px;
+}
+
+
+article button:hover{
+    border: 2px solid green;
+}
+ 
+/*///////////////////////////////////////////////////////////////*/
+
+/*SECCIONES DE MI BODY*/
+section{
+    background-color: #aabad3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+
+section p,h2{
+    color: rgb(0, 0, 0);
+
+}
+
+section h2{
+ margin-bottom: 40px;
+}
+
+section p{
+    padding: 30px;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*IFRAME DE MAPA*/
+#mapa{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #0d121a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+#mapa h1{
+    margin-bottom: 30px;
+    font-family: monospace;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*EDICIÓN DEL SUMMARY*/
+#preguntas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+}
+
+#preguntas details{
+    width: 600px;
+    min-height: 40px;
+    margin: 6px;
+    background-color: #6181aa69;
+    padding: 20px;
+}
+
+#preguntas h2{
+    color: rgb(116, 150, 180);
+    text-decoration: underline;
+}
+
+summary {
+    color: rgb(13, 75, 117);
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*EDICIÓN DEL FOOTER*/
+footer {
+    width: 100%;
+    align-self: flex-end;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-footer {
+    height: 80px;
+    margin-bottom: 1rem;
+
+}
+/*CONTENEDORES DEL FOOTER*/
+.contenedor-iconos-redes-sociales, .contenedor-menu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+}
+/*STYLE PARA LOS ICONOS DE LAS REDES*/
+.icono-red-social {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(ICONS/brand-facebook.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.icono-red-social:hover {
+    background-color: #121212;
+    filter: invert(1);
+}
+
+/*ICONOS DE LAS REDES*/
+.icono-red-social:nth-of-type(2) {
+    background-image: url(ICONS/brand-github.png);
+}
+
+.icono-red-social:nth-of-type(3) {
+    background-image: url(ICONS/brand-instagram.png);
+}
+.icono-red-social:nth-of-type(4) {
+    background-image: url(ICONS/brand-twitter.png);
+}
+
+.icono-red-social:nth-of-type(5) {
+    background-image: url(ICONS/brand-linkedin.png);
+}
+
+/*STYLE PARA EL MENU DEL FOOTER*/
+.contenedor-menu-footer {
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+/*STYLE PARA EL MENU DE LOS ITEMS*/
+.menu-item {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: transform 250ms;
+}
+
+.menu-item:hover{
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+/*STYLE PARA EL COPYRIGHT*/
+.copyright {
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}

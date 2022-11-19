@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--LIBRERÍAS PARA EL HOVER IMAGE Y BTNS-->
+        <link rel="stylesheet" href="CSS/LIBRERÍAS/hover.css">
+        <link rel="stylesheet" href="CSS/LIBRERÍAS/imagehover.css">
+       
+        <title>Inicio</title>
+    </head>
+    <body>
+        <!--EDICIÓN DEL HEADER TIPO FLEX-->
+        <header>
+            <!--PRIMERA CAJA PARA EL LOGO-->
+            <div class="logo">
+                <h1>Axel<span class="title">HB</span></h1>
+            </div>
+
+            <!--SEGUNDA CAJA PARA EL NAV-->
+            <nav>
+
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#mapa">¿Dónde Trabajo?</a></li>
+                        <li><a href="#preguntas">Preguntas</a></li>
+                    </ul>
+            </nav>
+
+            <!--TERCERA CAJA PARA LOS BOTONES Y UN SELECT-->
+            <div class="btns">
+                <a href="index.html"> <img style="width: 30px; height: 30px;" src="ICONS/user.png" alt="Axel"></a>
+                <select name="soy" id="SOY">
+                    <option value="humano">humano</option>
+                    <option value="robot">robot</option>
+                </select>
+            </div>
+        </header>  
+
+        <!--TERCERA CAJA PARA LOS BOTONES Y UN SELECT-->
+        <main id="inicio">
+            <div class="logo-m">
+                <h1 class="h1">Axel<span class="title">HB</span></h1>
+            </div>
+        </main>
+
+        <!--ARTICULOS-->
+        <div class="cont-art">
+            <!--ARTICULOS / PRIMER ARTÍCULO-->
+            <article id="inicio">
+                <div>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolor provident dolorum tempora, ipsam ex voluptatum voluptates eligendi quas iure.</p>
+                    <button>saber mas!!</button>  <button>saber mas!!</button>  
+                </div>
+                <figure class="imghvr-push-up">
+                    <img src="IMAGES/art-1.png">
+                    <figcaption>
+                      // Hover Content
+                    </figcaption>
+                </figure>
+            </article>
+        
+            <hr>
+            
+            <!--ARTICULOS / SEGUNDO ARTÍCULO-->
+            <article id="sobre-mi">
+                <figure class="imghvr-flip-diag-1">
+                    <img src="IMAGES/art-2.png">
+                    <figcaption>
+                      // Hover Content
+                    </figcaption>
+                </figure>
+                <div>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, error!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quidem repellendus provident magnam fuga corrupti sequi, consequuntur atque hic id.</p>
+                    <button>saber mas!!</button>  <button>saber mas!!</button> 
+                </div>
+            </article>
+        
+          <hr>
+
+            <!--ARTICULOS / TERCER ARTÍCULO-->  
+            <article id="contacto">
+                <div>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, illo.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam id eveniet possimus esse fugiat nihil quidem ullam omnis harum expedita.</p>
+                    <button>saber mas!!</button>  <button>saber mas!!</button>  
+                </div>
+                <figure class="imghvr-shutter-out-diag-1">
+                    <img src="IMAGES/art-3.png">
+                    <figcaption>
+                      // Hover Content
+                    </figcaption>
+                </figure>
+            </article>
+
+            <!--SECCIÓN-->
+            <section id="agregado">
+                <div>
+                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui accusantium necessitatibus fugiat consectetur, sunt fugit.</h2>
+                </div>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, consequatur omnis dolor ab quo qui commodi nihil, non iure repellat ea, explicabo repudiandae deleniti modi molestias dolore fugit incidunt voluptatem. Libero cum sequi amet id! Corrupti, dolorem a molestias similique voluptate cumque reprehenderit. Facere tenetur, illum asperiores exercitationem natus vitae placeat iure accusantium, quos nam temporibus id corrupti totam dolores nihil nulla cum. Voluptate odit aliquid necessitatibus repudiandae? Dicta quisquam ratione sapiente nemo, laboriosam facilis explicabo ad excepturi dolorem nulla rem aperiam eaque totam mollitia deleniti necessitatibus a voluptatum magni error voluptates aut. Sint quo maiores debitis sequi autem! Molestiae.</p>      
+                </div>   
+                <a class="hvr-float-shadow hvr-bob" target="_blank" href="https://www.google.com/"> seguir leyendo</a>
+            </section>
+
+            <!--SECCIÓN MAPA-->
+            <article id="mapa">  
+                <div>
+                    <h1>Aquí es donde Trabajo</h1>
+                </div>
+                <div> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105115.61956629573!2d-58.51081453749998!3d-34.5823301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1fa6732c4b%3A0xe0081a9aaee2c67b!2sMinisterio%20de%20Educaci%C3%B3n%20de%20la%20Ciudad%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1668724211439!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+
+
+            <section id="preguntas">
+                <div><h2>PREGUNTAS FRECUENTES</h2></div>
+                
+                <div>
+                    <details>
+                        <summary>¿Pregunta?</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusamus explicabo ea veniam cum cumque repellat beatae? Alias, eum eveniet?</p>
+                    </details>
+                </div>
+
+                <div>
+                    <details>
+                        <summary>¿Pregunta?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, cum? Laboriosam distinctio ab libero quia amet praesentium delectus accusamus, repellat rerum culpa quod obcaecati expedita saepe enim optio et possimus a voluptatem nostrum mollitia. Cum mollitia reiciendis delectus aliquam! Dolor.</p>
+                    </details>
+                </div>
+            
+                <div>
+                    <details>
+                        <summary>¿Pregunta?</summary>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, quidem iusto. Eveniet alias corporis nesciunt.</p>
+                    </details>
+                </div>
+
+                <div>
+                    <details>
+                        <summary>¿Pregunta?</summary>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, velit!</p>
+                    </details>
+                </div>
+            </section>
+        </div>
+        
+        
+        
+
+        <!--PIE DE PÁGINA-->
+        <footer>
+            <img src="IMAGES/logo.png" alt="" class="logo-footer">
+            
+            <div class="contenedor-iconos-redes-sociales">
+                <a href="" class="icono-red-social"></a>
+                <a href="" class="icono-red-social"></a>
+                <a href="" class="icono-red-social"></a>
+                <a href="" class="icono-red-social"></a>
+                <a href="" class="icono-red-social"></a>
+            </div>
+
+            <ul class="contenedor-menu-footer">
+                <li class="menu-item">Facebook</li>
+                <li class="menu-item">GitHub</li>
+                <li class="menu-item">Instagram</li>
+                <li class="menu-item">Twitter</li>
+                <li class="menu-item">Linkedin</li>
+            </ul>
+
+            <p class="copyright">&copy;2022, Axel Henderson Bianchi. Todos los derechos reservados.</p>
+        </footer>
+
+
+    </body>
+</html>
