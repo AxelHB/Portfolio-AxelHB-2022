@@ -82,6 +82,23 @@ header nav a:hover{
 
 /*///////////////////////////////////////////////////////////////*/
 
+/*EDICIÓN DEL LOS BOTONES PARA NAV*/
+.btns {
+    display: flex;
+    align-items: flex-end;
+}
+
+.btns p{
+    font-size: 18px;
+    color: lightgreen;
+}
+
+.btns #SOY , .juego {
+    margin: 0 0 0 10px;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
 /*EDICIÓN LOGO DEL VH*/
 .logo-m{
     font-family: cursive;
@@ -127,10 +144,6 @@ article{
     justify-content: center;
     align-items: center;
 }
-
-/*////////////////////// OVER IMG */
-
-
 
 /*///////////////////////////////////////////////////////////////*/
 
@@ -189,8 +202,6 @@ section p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
-
 }
 
 #mapa h1{
@@ -229,6 +240,40 @@ summary {
     color: rgb(13, 75, 117);
     font-weight: bold;
     padding: 10px;
+}
+
+/*///////////////////////////////////////////////////////////////*/
+
+/*@MEDIA*/
+
+@media only screen and (max-width: 800px) {
+    #inicio , #sobre-mi , #contacto , #agregado , #mapa {
+        flex-direction: column;
+        margin: 5px;
+    }
+    #inicio div , #sobre-mi div , #contacto div {
+        margin: 30px;
+        
+    }
+    #agregado div h2 {
+        font-size: 15px;
+    }
+    #agregado div p {
+        margin-top: -30px;
+        font-size: 12px;
+    }
+    #mapa iframe {
+        width: 400px;
+        height: 400px;
+    }
+    #preguntas h2 {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    #preguntas div {
+        display: flex;
+        width: 430px;
+    }
 }
 
 /*///////////////////////////////////////////////////////////////*/
