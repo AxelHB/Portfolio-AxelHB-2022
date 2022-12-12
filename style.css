@@ -144,7 +144,7 @@ nav ul li a{
     font-family: 'Special Elite', cursive;
 }
 li a.active, li a:hover{
-    background: #6ac78186;
+    background: #515baf86;
     transition: .5s;
 }
 .checkbtn{
