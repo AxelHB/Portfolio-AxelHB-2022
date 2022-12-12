@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <!--LIBRERÍAS PARA EL HOVER IMAGE Y BTNS-->
         <link rel="stylesheet" href="CSS/LIBRERÍAS/hover.css">
@@ -12,35 +13,29 @@
         <title>Inicio</title>
     </head>
     <body>
+        <!--LOADER-->
+        <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+
         <!--EDICIÓN DEL HEADER TIPO FLEX-->
         <header>
-            <!--PRIMERA CAJA PARA EL LOGO-->
-            <div class="logo">
-                <h1>Axel<span class="title">HB</span></h1>
-            </div>
-
-            <!--SEGUNDA CAJA PARA EL NAV-->
             <nav>
-
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#sobre-mi">Sobre Mí</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="#mapa">¿Dónde Trabajo?</a></li>
-                        <li><a href="#preguntas">Preguntas</a></li>
-                    </ul>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="#" class="enlace">
+                    <h1 class="logo" >Axel<span class="title">HB</span></h1>
+                </a>
+                <ul>
+                    <li><a class="active" href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#mapa">¿Dónde Trabajo?</a></li>
+                    <li><a href="#preguntas">Preguntas</a></li>
+                </ul>
             </nav>
 
-            <!--TERCERA CAJA PARA LOS BOTONES Y UN SELECT-->
-            <div class="btns">
-                <p>Contacto</p>
-                <a href="HTML/form.html"><img style="width: 30px; height: 30px;" src="ICONS/user.png" alt="Axel"></a>
-                <select name="soy" id="SOY">
-                    <option value="humano">humano</option>
-                    <option value="robot">robot</option>
-                </select>
-                <button class="juego hvr-pulse-grow"><a href="AHORCADO/index.html">¿Jugamos?</a></button>
-            </div>
+
         </header>  
 
         <!--TERCERA CAJA PARA LOS BOTONES Y UN SELECT-->
@@ -182,6 +177,6 @@
             <p class="copyright">&copy;2022, Axel Henderson Bianchi. Todos los derechos reservados.</p>
         </footer>
 
-
+        <script src="script.js"></script>
     </body>
 </html>
