@@ -9,6 +9,9 @@
         <!--LIBRERÍAS PARA EL HOVER IMAGE Y BTNS-->
         <link rel="stylesheet" href="CSS/LIBRERÍAS/hover.css">
         <link rel="stylesheet" href="CSS/LIBRERÍAS/imagehover.css">
+        <!--FUENTES DE GOOGLE-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Special+Elite&display=swap" rel="stylesheet">
        
         <title>Inicio</title>
     </head>
@@ -32,7 +35,13 @@
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#mapa">¿Dónde Trabajo?</a></li>
                     <li><a href="#preguntas">Preguntas</a></li>
+                    <select name="elegir" id="elegir" onchange="document.location.href=this.value"> <!--ONCHANGE PARA IR A UN INDEX DEL SITIO-->
+                        <option selected disabled>ELEGIR</option> <!--SELECT DISABLED PARA OPCIÓN VACÍA-->
+                        <option value="AHORCADO/index.html">Juego</option>
+                        <option value="HTML/form.html">Contáctame</option>
+                    </select>
                 </ul>
+               
             </nav>
 
 
